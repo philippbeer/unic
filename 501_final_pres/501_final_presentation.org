@@ -238,7 +238,7 @@ dte.g. Euclidean distance
 *** Grid-based methods
 #+ATTR_HTML: width: 200px
 #+ATTR_LATEX: width: 200px
-[[https://philippbeer.github.io/501_final_pres/img/grid_based.png]]
+[[https://philippbeer.github.io/unic/501_final_pres/img/grid_based.png]]
 - quantizing the feature space into hyper-rectangles (cells)
 - for reach range of those intervals the respective metrics are computed
 **** Challenges
