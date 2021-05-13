@@ -251,11 +251,11 @@ dte.g. Euclidean distance
 *** Density-based methods
 - DBSCAN
 - two parameters (neighbourhood and minimum for points)
-**** Challenges
+*** DB-metods challenges
 - correct setup of parameters requires higher understanding of the data
 - varying cluster densities create a challenge
 - not often applied in time series due to this complexity
-**** Advantages
+*** DB-methods advantages
 - can handle non-globular shapes well
 - quick execution speed
 - is capable of identifying noise and outliers
