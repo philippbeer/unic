@@ -57,7 +57,7 @@
 * Time Series Clustering: A Review
 #+ATTR_HTML: :width 200px
 #+ATTR_LATEX: :width 200px
-[[https://552dlimages.s3-eu-west-1.amazonaws.com/unic_logo.png]]
+[[https://philippbeer.github.io/unic/501_final_pres/img/unic_logo.png]]
 
 Philipp Beer\\
 Gradudate Program Data Science, UNIC\\
@@ -154,9 +154,9 @@ time series data representation is *transforming* the time series to another dim
 4. data dictated - transformation that compresses time series
 ** Clustering time series by
 *** Shape-based clustering
-[[https://github.com/philippbeer/unic/blob/main/501_final_pres/img/shape_based_clustering.png]]
+[[https://philippbeer.github.io/unic/501_final_pres/img/shape_based_clustering.png]]
 *** Feature-based
-[[https://github.com/philippbeer/unic/blob/main/501_final_pres/img/feature_based_clustering.png]]
+[[https://philippbeer.github.io/unic/501_final_pres/img/feature_based_clustering.png]]
 *** Model-based
 - transform raw time-series into model parameters
 - apply distance metric
@@ -178,7 +178,7 @@ dte.g. Euclidean distance
 *** approximate metrics
 #+ATTR_HTML: :width 500px
 #+ATTR_LATEX: :width 500px
-[[https://github.com/philippbeer/unic/blob/main/501_final_pres/img/dtw_metric.png]]
+[[https://philippbeer.github.io/unic/501_final_pres/img/dtw_metric.png]]
 - can handle different length time series
 - Dynamic Time Warping (DTW)
 #+BEGIN_NOTES
@@ -224,7 +224,7 @@ dte.g. Euclidean distance
 *** Hierarchical
 #+ATTR_HTML: width: 300px
 #+ATTR_LATEX: width: 300px
-[[https://github.com/philippbeer/unic/blob/main/501_final_pres/img/dendogram.png]]
+[[https://philippbeer.github.io/unic/501_final_pres/img/dendogram.png]]
 - bottom-up and top-down approaches
 - distance measure: single-, average-, complete-link
 *** Hierarchical - challenges
@@ -238,7 +238,7 @@ dte.g. Euclidean distance
 *** Grid-based methods
 #+ATTR_HTML: width: 200px
 #+ATTR_LATEX: width: 200px
-[[https://github.com/philippbeer/unic/blob/main/501_final_pres/img/grid_based.png]]
+[[https://philippbeer.github.io/501_final_pres/img/grid_based.png]]
 - quantizing the feature space into hyper-rectangles (cells)
 - for reach range of those intervals the respective metrics are computed
 **** Challenges
