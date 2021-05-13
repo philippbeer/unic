@@ -236,18 +236,18 @@ dte.g. Euclidean distance
 - no predetermination of k required
 
 *** Grid-based methods
-#+ATTR_HTML: :width 100px
-#+ATTR_LATEX: :width 100px
+#+ATTR_HTML: :width 300px
+#+ATTR_LATEX: :width 300px
 [[https://philippbeer.github.io/unic/501_final_pres/img/grid_based.png]]
 - quantizing the feature space into hyper-rectangles (cells)
-- for reach range of those intervals the respective metrics are computed
-**** Challenges
+- for each range of those intervals the respective metrics are computed
+*** Grid-based challenges
 - no relationship between the grids is created
 - interval range is a manual parameter and not inherent of the algorithm
 - question: Can these ranges be inferred from the data?
-**** Advantages
+*** Grid-based advantages
 - single pass computation $$ \mathcal{O}(N) $$
-- very fast query impacted only by number of grids (k): $$ \mathcal
+- very fast query impacted only by number of grids (k): $$ \mathcal{O}(k) $$
 *** Density-based methods
 - DBSCAN
 - two parameters (neighbourhood and minimum for points)
