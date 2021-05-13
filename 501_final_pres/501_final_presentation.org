@@ -242,7 +242,7 @@ dte.g. Euclidean distance
 - quantizing the feature space into hyper-rectangles (cells)
 - for each range of those intervals the respective metrics are computed
 *** Grid-based challenges
-- *no* relationship between the grids
+- *NO* relationship between the grids
 - interval range is a manual parameter
 - *Research Question*: Can these ranges be inferred from the data?
 *** Grid-based advantages
