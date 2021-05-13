@@ -249,8 +249,8 @@ dte.g. Euclidean distance
 - single pass computation $$ \mathcal{O}(N) $$
 - very fast query impacted only by number of grids (k): $$ \mathcal{O}(k) $$
 *** Density-based methods
-- DBSCAN
-- two parameters (neighbourhood and minimum for points)
+[[https://philippbeer.github.io/unic/501_final_pres/img/dbscan.png]]
+- DBSCAN - two parameters (neighbourhood and minimum for points)
 *** DB-metods challenges
 - correct setup of parameters requires higher understanding of the data
 - varying cluster densities create a challenge
