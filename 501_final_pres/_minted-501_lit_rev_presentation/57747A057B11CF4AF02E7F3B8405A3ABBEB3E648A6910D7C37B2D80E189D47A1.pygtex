@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{update\PYGZus{}bitmap}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{word}\PYG{p}{:} \PYG{n+nb}{str}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+	\PYG{c+c1}{\PYGZsh{} calculate hash value}
+	\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{nmap}\PYG{p}{):}
+	    \PYG{c+c1}{\PYGZsh{} calculate hash with current set of values}
+	    \PYG{n}{hash\PYGZus{}val} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{hash\PYGZus{}val}\PYG{p}{(}\PYG{n}{word}\PYG{o}{=}\PYG{n}{word}\PYG{p}{,}
+				     \PYG{n}{v}\PYG{o}{=}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{vs}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}
+				     \PYG{n}{w}\PYG{o}{=}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{ws}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])}
+	    \PYG{c+c1}{\PYGZsh{} find rightmost set bit in hash value}
+	    \PYG{n}{r} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rightmost\PYGZus{}set\PYGZus{}bit}\PYG{p}{(}\PYG{n}{hash\PYGZus{}val}\PYG{p}{)}
+	    \PYG{k}{if} \PYG{n}{r} \PYG{o}{==} \PYG{k+kc}{None}\PYG{p}{:}  \PYG{c+c1}{\PYGZsh{} cases need to be ignored as element value is 0}
+		\PYG{k}{continue}
+	    \PYG{k}{assert} \PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{r}\PYG{p}{)} \PYG{o}{==} \PYG{n+nb}{int}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}r must be int\PYGZsq{}}
+	    \PYG{k}{if} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{bitmaps}\PYG{p}{[}\PYG{n}{i}\PYG{p}{,} \PYG{n}{r}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+		\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{bitmaps}\PYG{p}{[}\PYG{n}{i}\PYG{p}{,} \PYG{n}{r}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{1}
+\end{Verbatim}

@@ -1,0 +1,8 @@
+*.aux
+*.fdb*
+*.fls
+*.html~
+*.log
+*.org~
+*.out
+*.tex~

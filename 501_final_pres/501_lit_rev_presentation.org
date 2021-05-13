@@ -1,0 +1,310 @@
+#+TITLE: Time Series Clustering: A Review
+#+AUTHOR: Philipp Beer
+#+EMAIL: philipp@sciscry.ai
+#+DATE: 2021-05-10
+#+DESCRIPTION: Literature review in time series clustering
+#+KEYWORDS: unic, 501dl, stassopoulou
+#+LANGUAGE: en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:https://orgmode.org/org-info.js
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_MATHJAX_URL: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+#+REVEAL_TRANS: Slide
+#+REVEAL_THEME: blood
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+HTML_LINK_UP:
+#+HTML_LINK_HOME:
+#+begin_export HTML
+<style>
+.reveal table {
+    font-size: 0.6em;
+}
+
+.reveal p {
+    font-size: 0.8em;
+}
+</style>
+#+end_export
+
+#+begin_export HTML
+<style>
+#left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:50%;
+  z-index:-10;
+}
+
+#right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:50%;
+}
+</style>
+#+end_export
+
+#+REVEAL_EXTRA_JS: {src: './org-reveal-animate.js/'}
+
+
+
+
+* Time Series Clustering: A Review
+#+ATTR_HTML: :width 200px
+#+ATTR_LATEX: :width 200px
+[[https://552dlimages.s3-eu-west-1.amazonaws.com/unic_logo.png]]
+
+Philipp Beer\\
+Gradudate Program Data Science, UNIC\\
+Prof. Athena Stassopoulou
+** Why you should listen to this talk
+If you want to *utilize time series* to create *forecasts*,\\
+*learn about their properties* or\\
+*want to learn what is missing the research of time series clustering*\\
+(IMHO) you should listen to this talk.
+** Introduction
+time series analysis an important part of machine learning
+
+*** Applications
+forecasting,\\
+reporting,\\
+analytics
+*** Fields
+natural sciences,\\
+engineering,\\
+finance,\\
+medicine,\\
+robotics
+*** Challenges in time series analysis
+#+ATTR_REVEAL: :frag (fade-in-then-out fade-in-then-out fade-in-then-out) :frag_idx (1 2 3)
+- utilization of time series usually very challenging
+- many considerations required
+- oftentimes only limited set of historical data available
+*** Time series clustering is used for
+#+ATTR_REVEAL: :frag fade-up
+Understand the intrinsic properties of time series oftentimes in context of adjacent time series
+*** Focus of this review
+#+ATTR_REVEAL: :frag (fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out)
+1. Definition  of terms clustering, time series and similarity measures
+2. Clustering by what
+3. Distance metrics
+4. Clustering algorithms
+5. Assessment
+6. Limitations
+7. Conclusion
+# 2. Time series representations
+# 2. Components in time series clustering
+   
+** Definitions
+*** Clustering
+#+begin_export html
+<div id="left">
+#+end_export
+#+ATTR_REVEAL: :frag grow
+#+CAPTION: 1979 - The Health Education Council DC Comics
+ [[./img/xray_vision.jpg]]
+#+begin_export html
+</div>
+<div id="right">
+#+end_export
+#+ATTR_REVEAL: :frag (fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out)
+- *unsupervised* learning technique
+- reveal patterns useful for exploitations
+- segmentation, grouping, distinction of elements into groups
+#+begin_export html
+</div>
+#+end_export
+*** Time series
+# quote from 3
+#+ATTR_REVEAL: :frag fade-in-then-semi-out
+*sequence composed by a series of continuous, real-valued elements*
+
+#+ATTR_REVEAL: :frag (fade-in-then-out fade-in-then-out fade-in-then-out)
+- share the same challenges as high dimensional data
+- "curse of dimensionality"
+- quickly requires high computational power to process
+
+*** Similarity measure in time series
+#+ATTR_REVEAL: :frag (fade-in fade-in)
+- measure of how similar series are
+- usually computed pair-wise
+
+*** Utility of Time series clustering
+#+ATTR_REVEAL: :frag fade-in-then-semi-out
+anomalies, novelties, discord
+
+#+ATTR_REVEAL: :frag (appear appear appear)
+- discover dynamic changes
+- generate predictions and recommendations
+- discover patterns
+
+** Time series representation :noexport:
+#+BEGIN_NOTES
+time series data representation is *transforming* the time series to another dimensionality reduced vector
+#+END_NOTES
+#+ATTR_REVEAL: :frag (fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out)
+1. data-adaptive - representation model that minimizes reconstruction error
+2. non-data adaptive - representation of fixed size segments
+3. model-based - representation via parameters of stochastic model
+4. data dictated - transformation that compresses time series
+** Clustering time series by
+*** Shape-based clustering
+[[./img/shape_based_clustering.png]]
+*** Feature-based
+x
+[[./img/feature_based_clustering.png]]
+*** Model-based
+- transform raw time-series into model parameters
+- apply distance metric
+
+** Distance metrics
+- cornerstone of the clustering algorithm
+- depending on way of clustering chosen
+*** stable distance metrics
+dte.g. Euclidean distance
+  $$ d(p,q) = \sqrt{(p_1 - q_1)^2 + \cdots + (p_n - q_n)^2} $$
+#+ATTR_REVEAL: :frag (fade-in-then-out fade-in-then-out fade-in-then-out)
+- raw time series requires same length
+- no large outliers
+- limited noise
+#+BEGIN_NOTES
+- Euclidean distance (ED) is very sensitive to unique features (outliers, noise)
+- ED requires same length time series
+#+END_NOTES
+*** approximate metrics
+#+ATTR_HTML: :width 500px
+#+ATTR_LATEX: :width 500px
+[[./img/dtw_metric.png]]
+- can handle different length time series
+- Dynamic Time Warping (DTW)
+#+BEGIN_NOTES
+- other metrics address part of these issues (e.g. DTW)
+- other methods introduce other issues (DTW - warping around local extremes)
+- complex methods often require parameters that can heavily impact performance (e.g. warping window)
+- more eloquent methods introduce high computational costs
+#+END_NOTES
+
+*** Current state of research
+- no existing framework how to choose these metrics
+- aim to identify new metrics or improve upon existing
+
+
+** Clustering algorithms
+# maybe table of methods
+#+CAPTION: Overview clustering algorithm types
+#+NAME: tab:clus_algo_types
+#+ATTR_LATEX: :environment tabularx :width \columnwidth :align |l|X|
+|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Algorithm category | general description                                                                                                                                   |
+|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Partional          | aims to find prototype-based clusters and associates the time series with it; number of clusters is predefined (k)                                    |
+|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hierarchical       | each time series starts as individual cluster and with iterations is associated with other time series to form a cluster by some measure of closeness |
+|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Density-based      | associates time series into a cluster based on a density measure                                                                                      |
+|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Grid-based         | quantizes feature space and segments time series into created intervals                                                                               |
+|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+*** Partional
+- grouping unlabeled data in groups
+- input parameter: *k*
+*** Partional - crisp
+- K-Means / K-Medoids
+- utilizable with different distance metrics
+*** Partional - fuzzy
+- fuzzy C-Keans / fuzzy K-Medoids
+- association to a cluster is defined by a probability
+- probabilities p of cluster associations:
+  $$ \sum{(p) = 1} $$
+*** Hierarchical
+#+ATTR_HTML: width: 300px
+#+ATTR_LATEX: width: 300px
+[[./img/dendogram.png]]
+- bottom-up and top-down approaches
+- distance measure: single-, average-, complete-link
+*** Hierarchical - challenges
+- no adjustments after decision about an element made
+- computational complexity: $$ \mathcal{O}(N^2) $$
+*** Hierarchical - advantages
+- visual analysis
+  # add image of dendogram
+- no predetermination of k required
+
+*** Grid-based methods
+#+ATTR_HTML: width: 200px
+#+ATTR_LATEX: width: 200px
+[[./img/grid_based.png]]
+- quantizing the feature space into hyper-rectangles (cells)
+- for reach range of those intervals the respective metrics are computed
+**** Challenges
+- no relationship between the grids is created
+- interval range is a manual parameter and not inherent of the algorithm
+- question: Can these ranges be inferred from the data?
+**** Advantages
+- single pass computation $$ \mathcal{O}(N) $$
+- very fast query impacted only by number of grids (k): $$ \mathcal
+*** Density-based methods
+- DBSCAN
+- two parameters (neighbourhood and minimum for points)
+**** Challenges
+- correct setup of parameters requires higher understanding of the data
+- varying cluster densities create a challenge
+- not often applied in time series due to this complexity
+**** Advantages
+- can handle non-globular shapes well
+- quick execution speed
+- is capable of identifying noise and outliers
+- those properties make it applicable to a wide variety of data sets
+
+** Assessment metrics
+*** General points
+- assessment is the trickiest part of the process
+- metrics are separated into *external* and *internal* metrics
+- implementations usually contain experimental flaws (data and implementation bias)
+- limits the generalizability of study results to real-world problems
+*** Solution proposals
+- always test implementation on a wide variety of data to verify (e.g. M4)
+- compare novel similarity measures to established ones
+*** Assessment with respect to what (IMPORTANT)
+- usually subsequent analytical step determines the value of the chosen clusters
+- pre-determined clusters are also only a specific usage of the underlying data
+*** External indexes
+- validation of clusters that exist outside of algorithm (often ground truth)
+- degree of matching between two partitions
+- Cluster Purity, Rand Index, F-measure, Entropy, Jaccard index
+*** Internal indexes
+- evaluation of a goodness of clustered structure
+- core idea: elements of same cluster close together / elements of other clusters well separated
+- Sum of Squared Errors, Silhouette score, R^2 index, ...
+
+** Limitations
+*** General
+- generally clustering algorithms do not perform well with time series
+- dimensionality, noise and the dynamic nature of time series are problematic
+- dimensionality reduction inherently brings *information loss*
+- research in this field is primarily focused on univariate time series
+- limited scope of time series are used for time series clustering research
+*** Representation methods
+- data-adaptive and model-based representation reduces dimensionality but struggles with the analysis of multiple series
+- non-data-adaptive methods struggle with variying length time series.
+*** Simlarity metrics
+- no framework for choosing appropriate distance metric exists
+- the user needs to choose between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)
+- additionally very few metrics exceed the ED performance
+*** Algorithms
+- popular methods like K-Means, K-Medoids struggle with non-globular shapes (property that is visually not observable in high-dimensional data) and are negatively impacted by outliers and noise
+- having to define parameters of algorithms in part is counter to the idea of learning patterns from the data without input
+- other algorithm categories address these issues at the price of computational complexity and infeasibility for large data sets
+** Conclusions and things you should remember
+- no clear pattern emerged which methods and metrics are to be used in which circumstances, likely due to lack of generalizability of the found results
+- adding complexity to current research may not serve the goals of finding meaningful algorithms and methods any more than already did
+- our proposal: focus research efforts more on finding fundamental truths about this process
+  - when to use/avoid certain metrics or algorithms
+  - clarity here: may improve general understanding
+** Thank you. Which questions do you have?
