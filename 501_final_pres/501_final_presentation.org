@@ -299,8 +299,10 @@ dte.g. Euclidean distance
 - no framework for choosing appropriate distance metric exists
 - the user needs to choose between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)
 - additionally very few metrics exceed the ED performance
-*** Algorithms
-- popular methods like K-Means, K-Medoids struggle with non-globular shapes (property that is visually not observable in high-dimensional data) and are negatively impacted by outliers and noise
+*** Algorithms I
+- non-globular shapes - partional methods
+- property that is visually not observable in high-dimensional data and are negatively impacted by outliers and noise
+*** Algorithms II  
 - having to define parameters of algorithms in part is counter to the idea of learning patterns from the data without input
 - other algorithm categories address these issues at the price of computational complexity and infeasibility for large data sets
 ** Conclusions and things you should remember
