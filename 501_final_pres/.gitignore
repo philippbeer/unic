@@ -8,3 +8,5 @@
 *.tex~
 ~$*
 *.gitignore~
+_minted*/
+auto/
