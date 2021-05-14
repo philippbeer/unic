@@ -251,10 +251,8 @@ Partional, Hierarchical, Density- and Grid-based
 
 ** Assessment metrics
 *** General points
-- assessment is the trickiest part of the process
+- trickiest part of the process
 - metrics are separated into *external* and *internal* metrics
-- implementations usually contain experimental flaws (data and implementation bias)
-- limits the generalizability of study results to real-world problems
 *** Solution proposals
 - always test implementation on a wide variety of data to verify (e.g. M4)
 - compare novel similarity measures to established ones
@@ -275,6 +273,8 @@ Partional, Hierarchical, Density- and Grid-based
 - generally clustering algorithms do not perform well with time series
 - dimensionality, noise and the dynamic nature of time series are problematic
 - dimensionality reduction inherently brings *information loss*
+- implementations usually contain experimental flaws (data and implementation bias)
+- limits the generalizability of study results to real-world problems  
 *** Research
 - research in this field is primarily focused on univariate time series
 - limited scope of time series are used for time series clustering research
