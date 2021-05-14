@@ -194,33 +194,19 @@ e.g. Euclidean distance
 
 
 ** Clustering algorithms
-# maybe table of methods
-#+CAPTION: Overview clustering algorithm types
-#+NAME: tab:clus_algo_types
-#+ATTR_LATEX: :environment tabularx :width \columnwidth :align |l|X|
-|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Algorithm category | general description                                                                                                                                   |
-|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Partional          | aims to find prototype-based clusters and associates the time series with it; number of clusters is predefined (k)                                    |
-|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hierarchical       | each time series starts as individual cluster and with iterations is associated with other time series to form a cluster by some measure of closeness |
-|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Density-based      | associates time series into a cluster based on a density measure                                                                                      |
-|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grid-based         | quantizes feature space and segments time series into created intervals                                                                               |
-|--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------|
+Partional, Hierarchical, Density- and Grid-based
 
 *** Partional
 - grouping unlabeled data in groups
 - input parameter: *k*
-*** Partional - crisp
-- K-Means / K-Medoids
+- distinguished into crips and fuzzy
+*** Challenges
+- limited to globular shapes
+- easily impacted by noise and outliers
+*** Advantages  
+- easy to understand and implement
 - utilizable with different distance metrics
-*** Partional - fuzzy
-- fuzzy C-Keans / fuzzy K-Medoids
-- association to a cluster is defined by a probability
-- probabilities p of cluster associations:
-  $$ \sum{(p) = 1} $$
+
 *** Hierarchical
 #+ATTR_HTML: width: 300px
 #+ATTR_LATEX: width: 300px
