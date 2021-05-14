@@ -165,7 +165,7 @@ time series data representation is *transforming* the time series to another dim
 - cornerstone of the clustering algorithm
 - depending on way of clustering chosen
 *** stable distance metrics
-dte.g. Euclidean distance
+e.g. Euclidean distance
   $$ d(p,q) = \sqrt{(p_1 - q_1)^2 + \cdots + (p_n - q_n)^2} $$
 #+ATTR_REVEAL: :frag (fade-in-then-out fade-in-then-out fade-in-then-out)
 - raw time series requires same length
