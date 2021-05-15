@@ -68,7 +68,8 @@ If you want to *utilize time series* to create *forecasts*,\\
 *want to learn what is missing the research of time series clustering*\\
 (IMHO) you should listen to this talk.
 ** Introduction
-time series analysis an important part of machine learning
+- no bothering with names or particular studies - read the review
+- time series analysis an important part of machine learning
 
 *** Applications
 forecasting,\\
@@ -82,10 +83,10 @@ medicine,\\
 robotics
 *** Challenges in time series analysis
 #+ATTR_REVEAL: :frag (fade-in-then-out fade-in-then-out fade-in-then-out) :frag_idx (1 2 3)
-- utilization of time series usually very challenging
-- consideration of countless properties
+- utilization of time series is hard
+- countless properties to consider
 - oftentimes only limited set of historical data available
-*** Time series clustering is used for
+*** Time series clustering is used for :noexport:
 #+ATTR_REVEAL: :frag fade-up
 Understand the intrinsic properties of time series oftentimes in context of adjacent time series
 *** Focus of this review
