@@ -194,10 +194,10 @@ e.g. Euclidean distance
 
 
 ** Clustering algorithms
-Partional,
-Hierarchical,
-Density-
-and Grid-based
+Partional,\\
+Hierarchical,\\
+Density-\\
+and Grid-based\\
 
 *** Partional
 - grouping unlabeled data in groups
