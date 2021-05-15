@@ -83,7 +83,7 @@ robotics
 *** Challenges in time series analysis
 #+ATTR_REVEAL: :frag (fade-in-then-out fade-in-then-out fade-in-then-out) :frag_idx (1 2 3)
 - utilization of time series usually very challenging
-- many considerations required
+- consideration of countless properties
 - oftentimes only limited set of historical data available
 *** Time series clustering is used for
 #+ATTR_REVEAL: :frag fade-up
@@ -91,7 +91,7 @@ Understand the intrinsic properties of time series oftentimes in context of adja
 *** Focus of this review
 #+ATTR_REVEAL: :frag (fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out fade-in-then-semi-out)
 1. Definition  of terms clustering, time series and similarity measures
-2. Clustering by what
+2. Properties to cluster by
 3. Distance metrics
 4. Clustering algorithms
 5. Assessment
