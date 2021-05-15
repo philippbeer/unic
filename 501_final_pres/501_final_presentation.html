@@ -62,10 +62,10 @@
 
 
 <section>
-<section id="slide-org7ca5aa0">
-<h2 id="org7ca5aa0">Time Series Clustering: A Review</h2>
+<section id="slide-org493fc27">
+<h2 id="org493fc27">Time Series Clustering: A Review</h2>
 
-<div id="orga07f283" class="figure">
+<div id="orgf503607" class="figure">
 <p><img src="https://philippbeer.github.io/unic/501_final_pres/img/unic_logo.png" alt="unic_logo.png" width="200px" />
 </p>
 </div>
@@ -78,8 +78,8 @@ Prof. Athena Stassopoulou
 </section>
 </section>
 <section>
-<section id="slide-org81a7ef4">
-<h3 id="org81a7ef4">Why you should listen to this talk</h3>
+<section id="slide-org46e7caf">
+<h3 id="org46e7caf">Why you should listen to this talk</h3>
 <p>
 If you want to <b>utilize time series</b> to create <b>forecasts</b>,<br />
 <b>learn about their properties</b> or<br />
@@ -89,23 +89,23 @@ If you want to <b>utilize time series</b> to create <b>forecasts</b>,<br />
 </section>
 </section>
 <section>
-<section id="slide-org740dc04">
-<h3 id="org740dc04">Introduction</h3>
+<section id="slide-org91c508f">
+<h3 id="org91c508f">Introduction</h3>
 <p>
 time series analysis an important part of machine learning
 </p>
 
 </section>
-<section id="slide-orge8ed052">
-<h4 id="orge8ed052">Applications</h4>
+<section id="slide-org3e2c110">
+<h4 id="org3e2c110">Applications</h4>
 <p>
 forecasting,<br />
 reporting,<br />
 analytics
 </p>
 </section>
-<section id="slide-org3f7b716">
-<h4 id="org3f7b716">Fields</h4>
+<section id="slide-org7a1a0ef">
+<h4 id="org7a1a0ef">Fields</h4>
 <p>
 natural sciences,<br />
 engineering,<br />
@@ -114,8 +114,8 @@ medicine,<br />
 robotics
 </p>
 </section>
-<section id="slide-org256e089">
-<h4 id="org256e089">Challenges in time series analysis</h4>
+<section id="slide-orgd4db475">
+<h4 id="orgd4db475">Challenges in time series analysis</h4>
 <ul>
 <li data-fragment-index="1" class="fragment fade-in-then-out">utilization of time series usually very challenging</li>
 <li data-fragment-index="2" class="fragment fade-in-then-out">consideration of countless properties</li>
@@ -123,14 +123,14 @@ robotics
 
 </ul>
 </section>
-<section id="slide-org7114451">
-<h4 id="org7114451">Time series clustering is used for</h4>
+<section id="slide-org40703ff">
+<h4 id="org40703ff">Time series clustering is used for</h4>
 <p class="fragment fade-up">
 Understand the intrinsic properties of time series oftentimes in context of adjacent time series
 </p>
 </section>
-<section id="slide-org529de48">
-<h4 id="org529de48">Focus of this review</h4>
+<section id="slide-org9a8d79c">
+<h4 id="org9a8d79c">Focus of this review</h4>
 <ol>
 <li class="fragment fade-in-then-semi-out">Definition  of terms clustering, time series and similarity measures</li>
 <li class="fragment fade-in-then-semi-out">Properties to cluster by</li>
@@ -145,16 +145,16 @@ Understand the intrinsic properties of time series oftentimes in context of adja
 </section>
 </section>
 <section>
-<section id="slide-org4db8786">
-<h3 id="org4db8786">Definitions</h3>
-<div class="outline-text-3" id="text-org4db8786">
+<section id="slide-org6b68833">
+<h3 id="org6b68833">Definitions</h3>
+<div class="outline-text-3" id="text-org6b68833">
 </div>
 </section>
-<section id="slide-orga51144b">
-<h4 id="orga51144b">Clustering</h4>
+<section id="slide-org5608727">
+<h4 id="org5608727">Clustering</h4>
 <div id="left">
 
-<div id="org53b5319" class="figure">
+<div id="org558c67c" class="figure">
 <p><img src="https://philippbeer.github.io/unic/501_final_pres/img/xray_vision.jpg" alt="xray_vision.jpg" class="fragment grow" />
 </p>
 <p><span class="figure-number">Figure 2: </span>1979 - The Health Education Council DC Comics</p>
@@ -169,8 +169,8 @@ Understand the intrinsic properties of time series oftentimes in context of adja
 </ul>
 </div>
 </section>
-<section id="slide-orgde4a639">
-<h4 id="orgde4a639">Time series</h4>
+<section id="slide-org6ffb102">
+<h4 id="org6ffb102">Time series</h4>
 <p class="fragment fade-in-then-semi-out">
 <b>sequence composed by a series of continuous, real-valued elements</b>
 </p>
@@ -183,8 +183,8 @@ Understand the intrinsic properties of time series oftentimes in context of adja
 </ul>
 
 </section>
-<section id="slide-orgc753308">
-<h4 id="orgc753308">Similarity measure in time series</h4>
+<section id="slide-org5b68df5">
+<h4 id="org5b68df5">Similarity measure in time series</h4>
 <ul>
 <li class="fragment fade-in">measure of how similar series are</li>
 <li class="fragment fade-in">usually computed pair-wise</li>
@@ -192,24 +192,24 @@ Understand the intrinsic properties of time series oftentimes in context of adja
 </ul>
 
 </section>
-<section id="slide-org452f80e">
-<h4 id="org452f80e">Utility of Time series clustering</h4>
+<section id="slide-orgcbce217">
+<h4 id="orgcbce217">Utility of Time series clustering</h4>
 <p class="fragment fade-in-then-semi-out">
 anomalies, novelties, discord
 </p>
 
 <ul>
 <li class="fragment appear">discover dynamic changes</li>
-<li class="fragment appear">generate predictions and recommendations</li>
 <li class="fragment appear">discover patterns</li>
+<li class="fragment appear">increase accuracy in predictions</li>
 
 </ul>
 
 </section>
 </section>
 <section>
-<section id="slide-orge5eace1">
-<h3 id="orge5eace1">Clustering time series by</h3>
+<section id="slide-org921b3ef">
+<h3 id="org921b3ef">Clustering time series by</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -239,16 +239,16 @@ anomalies, novelties, discord
 </section>
 </section>
 <section>
-<section id="slide-orgc850e12">
-<h3 id="orgc850e12">Distance metrics</h3>
+<section id="slide-orgd85f094">
+<h3 id="orgd85f094">Distance metrics</h3>
 <ul>
 <li>cornerstone of the clustering algorithm</li>
-<li>depending on way of clustering chosen</li>
+<li>categories: <b>stable</b> and <b>approximate</b></li>
 
 </ul>
 </section>
-<section id="slide-org3a18999">
-<h4 id="org3a18999">Simple distance metrics</h4>
+<section id="slide-orge25b136">
+<h4 id="orge25b136">Stable distance metrics</h4>
 <p>
 Euclidean distance
   \[ d(p,q) = \sqrt{(p_1 - q_1)^2 + \cdots + (p_n - q_n)^2} \]
@@ -268,10 +268,10 @@ Euclidean distance
 
 </aside>
 </section>
-<section id="slide-orgff92abe">
-<h4 id="orgff92abe">approximate metrics</h4>
+<section id="slide-org629ed5b">
+<h4 id="org629ed5b">approximate metrics</h4>
 
-<div id="org20000a9" class="figure">
+<div id="org9b973f4" class="figure">
 <p><img src="https://philippbeer.github.io/unic/501_final_pres/img/dtw_metric.png" alt="dtw_metric.png" width="500px" />
 </p>
 </div>
@@ -292,19 +292,19 @@ Euclidean distance
 </aside>
 
 </section>
-<section id="slide-org330debe">
-<h4 id="org330debe">Current state of research</h4>
+<section id="slide-org6ede7df">
+<h4 id="org6ede7df">Current state of research</h4>
 <ul>
-<li>no existing framework how to choose these metrics</li>
-<li>aim to identify new metrics or improve upon existing</li>
+<li><b>missing framework</b> how to choose these metrics</li>
+<li>aim: identify new metrics or improve upon existing</li>
 
 </ul>
 
 </section>
 </section>
 <section>
-<section id="slide-org2743b5e">
-<h3 id="org2743b5e">Clustering Algorithms I</h3>
+<section id="slide-org45a0306">
+<h3 id="org45a0306">Clustering Algorithms I</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -339,8 +339,8 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-org006c2dc">
-<h3 id="org006c2dc">Clustering Algorithms II</h3>
+<section id="slide-orgf5e2ff5">
+<h3 id="orgf5e2ff5">Clustering Algorithms II</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -368,21 +368,21 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-orgf421a35">
-<h3 id="orgf421a35">Partional</h3>
-<div class="outline-text-3" id="text-orgf421a35">
+<section id="slide-orgaa50d20">
+<h3 id="orgaa50d20">Partional</h3>
+<div class="outline-text-3" id="text-orgaa50d20">
 </div>
 </section>
-<section id="slide-orgcffb3ba">
-<h4 id="orgcffb3ba">Challenges</h4>
+<section id="slide-org93984c7">
+<h4 id="org93984c7">Challenges</h4>
 <ul>
 <li>limited to globular shapes</li>
 <li>easily impacted by noise and outliers</li>
 
 </ul>
 </section>
-<section id="slide-orgc448d91">
-<h4 id="orgc448d91">Advantages</h4>
+<section id="slide-org98aa65d">
+<h4 id="org98aa65d">Advantages</h4>
 <ul>
 <li>easy to understand and implement</li>
 <li>utilizable with different distance metrics</li>
@@ -392,8 +392,8 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-orgd867a1a">
-<h3 id="orgd867a1a">Hierarchical</h3>
+<section id="slide-org6d8efb3">
+<h3 id="org6d8efb3">Hierarchical</h3>
 <aside class="notes">
 <ul>
 <li>bottom-up and top-down approaches</li>
@@ -403,16 +403,16 @@ Euclidean distance
 
 </aside>
 </section>
-<section id="slide-org286de69">
-<h4 id="org286de69">Challenges</h4>
+<section id="slide-orgd2406f2">
+<h4 id="orgd2406f2">Challenges</h4>
 <ul>
 <li>no adjustments after decision about an element made</li>
 <li>computational complexity: \[ \mathcal{O}(N^2) \]</li>
 
 </ul>
 </section>
-<section id="slide-org6485d65">
-<h4 id="org6485d65">Advantages</h4>
+<section id="slide-orgd269193">
+<h4 id="orgd269193">Advantages</h4>
 <ul>
 <li>visual analysis</li>
 <li>no predetermination of k required</li>
@@ -422,8 +422,8 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-orge1c8513">
-<h3 id="orge1c8513">Density-based methods</h3>
+<section id="slide-org2553071">
+<h3 id="org2553071">Density-based methods</h3>
 <aside class="notes">
 <ul>
 <li>DBSCAN - two parameters (neighbourhood and minimum for points)</li>
@@ -432,8 +432,8 @@ Euclidean distance
 
 </aside>
 </section>
-<section id="slide-org78c5fc2">
-<h4 id="org78c5fc2">Challenges</h4>
+<section id="slide-org3be8d47">
+<h4 id="org3be8d47">Challenges</h4>
 <ul>
 <li>correct setup of parameters requires higher understanding of the data</li>
 <li><b>varying cluster densities</b> create a challenge</li>
@@ -441,8 +441,8 @@ Euclidean distance
 
 </ul>
 </section>
-<section id="slide-org4faf079">
-<h4 id="org4faf079">Advantages</h4>
+<section id="slide-org0224799">
+<h4 id="org0224799">Advantages</h4>
 <ul>
 <li>can <b>handle non-globular shapes</b> well</li>
 <li><b>quick</b> execution speed</li>
@@ -454,8 +454,8 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-org4ae3212">
-<h3 id="org4ae3212">Grid-based methods</h3>
+<section id="slide-org203b67b">
+<h3 id="org203b67b">Grid-based methods</h3>
 <aside class="notes">
 <ul>
 <li>quantizing the feature space into hyper-rectangles (cells)</li>
@@ -465,8 +465,8 @@ Euclidean distance
 
 </aside>
 </section>
-<section id="slide-org9024301">
-<h4 id="org9024301">Challenges</h4>
+<section id="slide-orgfe05c9e">
+<h4 id="orgfe05c9e">Challenges</h4>
 <ul>
 <li><b>NO</b> relationship between the grids</li>
 <li>interval range is a manual parameter</li>
@@ -474,8 +474,8 @@ Euclidean distance
 
 </ul>
 </section>
-<section id="slide-orgd2c903e">
-<h4 id="orgd2c903e">Advantages</h4>
+<section id="slide-org80d3500">
+<h4 id="org80d3500">Advantages</h4>
 <ul>
 <li>single pass computation \[ \mathcal{O}(N) \]</li>
 <li>very fast query impacted only by number of grids (k): \[ \mathcal{O}(k) \]</li>
@@ -485,29 +485,29 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-org9d54766">
-<h3 id="org9d54766">Assessment metrics</h3>
-<div class="outline-text-3" id="text-org9d54766">
+<section id="slide-org318cb32">
+<h3 id="org318cb32">Assessment metrics</h3>
+<div class="outline-text-3" id="text-org318cb32">
 </div>
 </section>
-<section id="slide-org2ef2d13">
-<h4 id="org2ef2d13">General points</h4>
+<section id="slide-org1de7635">
+<h4 id="org1de7635">General points</h4>
 <ul>
 <li>trickiest part of the process</li>
 <li>metrics are separated into <b>external</b> and <b>internal</b> metrics</li>
 
 </ul>
 </section>
-<section id="slide-org5180cf2">
-<h4 id="org5180cf2">Assessment with respect to what (IMPORTANT)</h4>
+<section id="slide-org8b0e38b">
+<h4 id="org8b0e38b">Assessment with respect to what (IMPORTANT)</h4>
 <ul>
 <li>usually subsequent analytical step determines the value of the chosen clusters</li>
 <li>pre-determined clusters are also only a specific usage of the underlying data</li>
 
 </ul>
 </section>
-<section id="slide-org86b36af">
-<h4 id="org86b36af">External indexes</h4>
+<section id="slide-org50c3eaa">
+<h4 id="org50c3eaa">External indexes</h4>
 <ul>
 <li>validation of clusters that exist outside of algorithm (often ground truth)</li>
 <li>degree of matching between two partitions</li>
@@ -515,8 +515,8 @@ Euclidean distance
 
 </ul>
 </section>
-<section id="slide-org1a927e5">
-<h4 id="org1a927e5">Internal indexes</h4>
+<section id="slide-org77ea6fe">
+<h4 id="org77ea6fe">Internal indexes</h4>
 <ul>
 <li>evaluation of a goodness of clustered structure</li>
 <li>core idea: elements of same cluster close together / elements of other clusters well separated</li>
@@ -527,13 +527,13 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-org6be83c8">
-<h3 id="org6be83c8">Limitations</h3>
-<div class="outline-text-3" id="text-org6be83c8">
+<section id="slide-org8741b67">
+<h3 id="org8741b67">Limitations</h3>
+<div class="outline-text-3" id="text-org8741b67">
 </div>
 </section>
-<section id="slide-org3d15cc2">
-<h4 id="org3d15cc2">General</h4>
+<section id="slide-org827cb34">
+<h4 id="org827cb34">General</h4>
 <ul>
 <li>generally clustering algorithms do not perform well with time series</li>
 <li>dimensionality, noise and the dynamic nature of time series are problematic</li>
@@ -543,16 +543,16 @@ Euclidean distance
 
 </ul>
 </section>
-<section id="slide-org523678b">
-<h4 id="org523678b">Research</h4>
+<section id="slide-org9e0d271">
+<h4 id="org9e0d271">Research</h4>
 <ul>
 <li>research in this field is primarily focused on univariate time series</li>
 <li>limited scope of time series are used for time series clustering research</li>
 
 </ul>
 </section>
-<section id="slide-org0edb4d5">
-<h4 id="org0edb4d5">Simlarity metrics</h4>
+<section id="slide-orge173430">
+<h4 id="orge173430">Simlarity metrics</h4>
 <ul>
 <li>no framework for choosing appropriate distance metric exists</li>
 <li>the user needs to choose between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)</li>
@@ -560,16 +560,16 @@ Euclidean distance
 
 </ul>
 </section>
-<section id="slide-org5e9d989">
-<h4 id="org5e9d989">Algorithms I</h4>
+<section id="slide-org72bcca5">
+<h4 id="org72bcca5">Algorithms I</h4>
 <ul>
 <li>non-globular shapes - partional methods</li>
 <li>property that is visually not observable in high-dimensional data and are negatively impacted by outliers and noise</li>
 
 </ul>
 </section>
-<section id="slide-org52100ce">
-<h4 id="org52100ce">Algorithms II</h4>
+<section id="slide-org7105ec1">
+<h4 id="org7105ec1">Algorithms II</h4>
 <ul>
 <li>having to define parameters of algorithms in part is counter to the idea of learning patterns from the data without input</li>
 <li>other algorithm categories address these issues at the price of computational complexity and infeasibility for large data sets</li>
@@ -578,21 +578,21 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-org152977f">
-<h3 id="org152977f">Conclusions and things you should remember</h3>
-<div class="outline-text-3" id="text-org152977f">
+<section id="slide-org3409fd9">
+<h3 id="org3409fd9">Conclusions and things you should remember</h3>
+<div class="outline-text-3" id="text-org3409fd9">
 </div>
 </section>
-<section id="slide-org4ac0d3c">
-<h4 id="org4ac0d3c">Missing framework for times series clustering</h4>
+<section id="slide-org52f6b85">
+<h4 id="org52f6b85">Missing framework for times series clustering</h4>
 <ul>
 <li>no clear pattern emerged for methods or metrics are to be used in which circumstances</li>
 <li>likely due to lack of generalizability of the found results</li>
 
 </ul>
 </section>
-<section id="slide-orgb75698e">
-<h4 id="orgb75698e">Researching towards more complexity</h4>
+<section id="slide-org30e1cc4">
+<h4 id="org30e1cc4">Researching towards more complexity</h4>
 <ul>
 <li>research is aiming to add more complexity</li>
 <li>e.g. hybrid methods</li>
@@ -600,8 +600,8 @@ Euclidean distance
 
 </ul>
 </section>
-<section id="slide-orgb8285b2">
-<h4 id="orgb8285b2">Our proposal</h4>
+<section id="slide-org4117b5b">
+<h4 id="org4117b5b">Our proposal</h4>
 <ul>
 <li>focus research efforts more on finding fundamental truths about this process</li>
 <li>when to use/avoid certain metrics or algorithms</li>
@@ -611,8 +611,8 @@ Euclidean distance
 </section>
 </section>
 <section>
-<section id="slide-org3d5144d">
-<h3 id="org3d5144d">Thank you. Which questions do you have?</h3>
+<section id="slide-orgb369e1c">
+<h3 id="orgb369e1c">Thank you. Which questions do you have?</h3>
 <p>
 <a href="https://philippbeer.github.io/unic/501_final_pres/501_ts_c_rev.pdf">(Details and the analyzed papers can be found in the literature review)</a>
 </p>

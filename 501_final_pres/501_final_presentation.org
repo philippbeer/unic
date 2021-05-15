@@ -140,8 +140,8 @@ anomalies, novelties, discord
 
 #+ATTR_REVEAL: :frag (appear appear appear)
 - discover dynamic changes
-- generate predictions and recommendations
 - discover patterns
+- increase accuracy in predictions
 
 ** Time series representation :noexport:
 #+BEGIN_NOTES
@@ -159,8 +159,8 @@ time series data representation is *transforming* the time series to another dim
 
 ** Distance metrics
 - cornerstone of the clustering algorithm
-- depending on way of clustering chosen
-*** Simple distance metrics
+- categories: *stable* and *approximate*
+*** Stable distance metrics
 Euclidean distance
   $$ d(p,q) = \sqrt{(p_1 - q_1)^2 + \cdots + (p_n - q_n)^2} $$
 - raw time series requires same length
@@ -184,8 +184,8 @@ Euclidean distance
 #+END_NOTES
 
 *** Current state of research
-- no existing framework how to choose these metrics
-- aim to identify new metrics or improve upon existing
+- *missing framework* how to choose these metrics
+- aim: identify new metrics or improve upon existing
 
 ** Clustering Algorithms I
 | Partional                                                       | Hierarchical                                                    |
