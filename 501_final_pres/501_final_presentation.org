@@ -193,25 +193,23 @@ e.g. Euclidean distance
 - aim to identify new metrics or improve upon existing
 
 ** Clustering Algorithms I
-| Partional | Hierarchical |
-|-----------+--------------|
-|           |              |
+| Partional                                                       | Hierarchical                                                    |
+|-----------------------------------------------------------------+-----------------------------------------------------------------|
+| [[https://philippbeer.github.io/unic/501_final_pres/partional.png]] | [[https://philippbeer.github.io/unic/501_final_pres/dendogram.png]] |
+#+BEGIN_NOTES
+- grouping unlabeled data in groups
+- input parameter: *k*
+- distinguished into crisp and fuzzy
+#+END_NOTES
 
-
+** Clustering Algorithms II
 | Density-Based                                                    | Grid-based                                                           |
 |------------------------------------------------------------------+----------------------------------------------------------------------|                                          
 | [[https://philippbeer.github.io/unic/501_final_pres/img/dbscan.png]] | [[https://philippbeer.github.io/unic/501_final_pres/img/grid_based.png]] |
 
-** Clustering algorithms
-Partional,\\
-Hierarchical,\\
-Density-\\
-and Grid-based\\
 
-*** Partional
-- grouping unlabeled data in groups
-- input parameter: *k*
-- distinguished into crisp and fuzzy
+
+** Partional
 *** Challenges
 - limited to globular shapes
 - easily impacted by noise and outliers
@@ -219,48 +217,46 @@ and Grid-based\\
 - easy to understand and implement
 - utilizable with different distance metrics
 
-*** Hierarchical
-#+ATTR_HTML: width: 300px
-#+ATTR_LATEX: width: 300px
-[[https://philippbeer.github.io/unic/501_final_pres/img/dendogram.png]]
+** Hierarchical
+#+BEGIN_NOTES
 - bottom-up and top-down approaches
 - distance measure: single-, average-, complete-link
-*** Hierarchical - challenges
+#+END_NOTES  
+*** Challenges
 - no adjustments after decision about an element made
 - computational complexity: $$ \mathcal{O}(N^2) $$
-*** Hierarchical - advantages
+*** Advantages
 - visual analysis
   # add image of dendogram
 - no predetermination of k required
 
-*** Grid-based methods
-#+ATTR_HTML: :width 300px
-#+ATTR_LATEX: :width 300px
-[[https://philippbeer.github.io/unic/501_final_pres/img/grid_based.png]]
-- quantizing the feature space into hyper-rectangles (cells)
-- for each range of those intervals the respective metrics are computed
-*** Grid-based challenges
-- *NO* relationship between the grids
-- interval range is a manual parameter
-- *Research Question*: Can these ranges be inferred from the data?
-*** Grid-based advantages
-- single pass computation $$ \mathcal{O}(N) $$
-- very fast query impacted only by number of grids (k): $$ \mathcal{O}(k) $$
-*** Density-based methods
-#+ATTR_HTML: :width 300px
-#+ATTR_LATEX: :width 300px
-[[https://philippbeer.github.io/unic/501_final_pres/img/dbscan.png]]
+** Density-based methods
+#+BEGIN_NOTES
 - DBSCAN - two parameters (neighbourhood and minimum for points)
-*** DB-metods challenges
+#+END_NOTES  
+*** Challenges
 - correct setup of parameters requires higher understanding of the data
 - *varying cluster densities* create a challenge
 - not often applied in time series due to this complexity
-*** DB-methods advantages
+*** Advantages
 - can *handle non-globular shapes* well
 - *quick* execution speed
 - is capable of *identifying noise and outliers*
 - those properties make it applicable to a wide variety of data sets
 
+** Grid-based methods
+#+BEGIN_NOTES
+- quantizing the feature space into hyper-rectangles (cells)
+- for each range of those intervals the respective metrics are computed
+#+END_NOTES  
+*** Challenges
+- *NO* relationship between the grids
+- interval range is a manual parameter
+- *Research Question*: Can these ranges be inferred from the data?
+*** Advantages
+- single pass computation $$ \mathcal{O}(N) $$
+- very fast query impacted only by number of grids (k): $$ \mathcal{O}(k) $$
+  
 ** Assessment metrics
 *** General points
 - trickiest part of the process
