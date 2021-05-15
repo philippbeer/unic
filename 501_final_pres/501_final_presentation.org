@@ -289,14 +289,12 @@ Euclidean distance
 - no framework for choosing appropriate distance metric exists
 - the user needs to choose between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)
 - additionally very few metrics exceed the ED performance
-*** Algorithms I
-- non-globular shapes - partional methods
-- property that is visually not observable in high-dimensional data and are negatively impacted by outliers and noise
-*** Algorithms II  
-- having to define parameters of algorithms in part is counter to the idea of learning patterns from the data without input
+*** Algorithms 
+- non-globular shapes
+- having to define parameters algorithms
 - other algorithm categories address these issues at the price of computational complexity and infeasibility for large data sets
 ** Conclusions and things you should remember
-*** Missing framework for times series clustering
+*** Missing framework for times series clustering :noexport:
 - no clear pattern emerged for methods or metrics are to be used in which circumstances
 - likely due to lack of generalizability of the found results
 *** Researching towards more complexity  
