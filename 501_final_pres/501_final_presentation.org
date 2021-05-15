@@ -202,7 +202,7 @@ and Grid-based\\
 *** Partional
 - grouping unlabeled data in groups
 - input parameter: *k*
-- distinguished into crips and fuzzy
+- distinguished into crisp and fuzzy
 *** Challenges
 - limited to globular shapes
 - easily impacted by noise and outliers
@@ -281,7 +281,7 @@ and Grid-based\\
 *** Research
 - research in this field is primarily focused on univariate time series
 - limited scope of time series are used for time series clustering research
-*** Representation methods
+*** Representation methods :noexport:
 - data-adaptive and model-based representation reduces dimensionality but struggles with the analysis of multiple series
 - non-data-adaptive methods struggle with variying length time series.
 *** Simlarity metrics
