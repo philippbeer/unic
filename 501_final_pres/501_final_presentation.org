@@ -143,7 +143,7 @@ anomalies, novelties, discord
 - generate predictions and recommendations
 - discover patterns
 
-** Time series representation :noexport::
+** Time series representation :noexport:
 #+BEGIN_NOTES
 time series data representation is *transforming* the time series to another dimensionality reduced vector
 #+END_NOTES
@@ -156,7 +156,6 @@ time series data representation is *transforming* the time series to another dim
 |Shape-based |Feature-based |Model-based |
 |---+---+---|
 |[[https://philippbeer.github.io/unic/501_final_pres/img/shape_based_clustering.png]]   |[[https://philippbeer.github.io/unic/501_final_pres/img/feature_based_clustering.png]]   | transform raw ts to model paramenters |
-
 
 ** Distance metrics
 - cornerstone of the clustering algorithm
