@@ -69,7 +69,7 @@ If you want to *utilize time series* to create *forecasts*,\\
 (IMHO) you should listen to this talk.
 ** Introduction
 - no bothering with names or particular studies - read the review
-- time series analysis an important part of machine learning
+- time series analysis is pervasive to many areas
 
 *** Applications
 forecasting,\\
