@@ -13,7 +13,7 @@
 #+REVEAL_TRANS: Slide
 #+REVEAL_THEME: blood
 #+EXPORT_SELECT_TAGS: export
-#+EXPORT_EXCLUDE_TAGS: noexport
+#+EXPORT_EXCLUDE_TAGS: noexport:
 #+HTML_LINK_UP:
 #+HTML_LINK_HOME:
 #+begin_export HTML
@@ -143,7 +143,7 @@ anomalies, novelties, discord
 - generate predictions and recommendations
 - discover patterns
 
-** Time series representation :noexport:
+** Time series representation :noexport::
 #+BEGIN_NOTES
 time series data representation is *transforming* the time series to another dimensionality reduced vector
 #+END_NOTES
@@ -261,7 +261,7 @@ e.g. Euclidean distance
 *** General points
 - trickiest part of the process
 - metrics are separated into *external* and *internal* metrics
-*** Solution proposals
+*** Solution proposals :noexport:
 - always test implementation on a wide variety of data to verify (e.g. M4)
 - compare novel similarity measures to established ones
 *** Assessment with respect to what (IMPORTANT)
@@ -286,7 +286,7 @@ e.g. Euclidean distance
 *** Research
 - research in this field is primarily focused on univariate time series
 - limited scope of time series are used for time series clustering research
-*** Representation methods :noexport:
+*** Representation methods :noexport::
 - data-adaptive and model-based representation reduces dimensionality but struggles with the analysis of multiple series
 - non-data-adaptive methods struggle with variying length time series.
 *** Simlarity metrics
