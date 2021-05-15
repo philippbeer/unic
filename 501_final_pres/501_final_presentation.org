@@ -307,3 +307,4 @@ Euclidean distance
 - when to use/avoid certain metrics or algorithms
 - clarity here: may improve general understanding
 ** Thank you. Which questions do you have?
+[[https://philippbeer.github.io/unic/501_final_pres/501_ts_c_rev.pdf][(Details and the analyzed papers can be found in the literature review)]]
