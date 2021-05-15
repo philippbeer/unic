@@ -260,7 +260,7 @@ Euclidean distance
 *** Solution proposals :noexport:
 - always test implementation on a wide variety of data to verify (e.g. M4)
 - compare novel similarity measures to established ones
-*** Assessment with respect to what (IMPORTANT)
+*** Assessment with respect to what (IMPORTANT) :noexport:
 - usually subsequent analytical step determines the value of the chosen clusters
 - pre-determined clusters are also only a specific usage of the underlying data
 *** External indexes
