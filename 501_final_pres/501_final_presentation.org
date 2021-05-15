@@ -279,7 +279,7 @@ Euclidean distance
 - dimensionality reduction inherently brings *information loss*
 - implementations usually contain experimental flaws (data and implementation bias)
 - limits the generalizability of study results to real-world problems  
-*** Research
+*** Research :noexport:
 - research in this field is primarily focused on univariate time series
 - limited scope of time series are used for time series clustering research
 *** Representation methods :noexport::
