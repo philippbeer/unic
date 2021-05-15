@@ -206,53 +206,53 @@ Euclidean distance
 
 
 ** Partional
-*** Challenges
-- limited to globular shapes
-- easily impacted by noise and outliers
 *** Advantages  
 - easy to understand and implement
 - utilizable with different distance metrics
 
+*** Challenges
+- limited to globular shapes
+- easily impacted by noise and outliers
 ** Hierarchical
 #+BEGIN_NOTES
 - bottom-up and top-down approaches
 - distance measure: single-, average-, complete-link
 #+END_NOTES  
-*** Challenges
-- no adjustments after decision about an element made
-- computational complexity: $$ \mathcal{O}(N^2) $$
 *** Advantages
 - visual analysis
   # add image of dendogram
 - no predetermination of k required
 
+*** Challenges
+- no adjustments after decision about an element made
+- computational complexity: $$ \mathcal{O}(N^2) $$
 ** Density-based methods
 #+BEGIN_NOTES
 - DBSCAN - two parameters (neighbourhood and minimum for points)
 #+END_NOTES  
-*** Challenges
-- correct setup of parameters requires higher understanding of the data
-- *varying cluster densities* create a challenge
-- not often applied in time series due to this complexity
 *** Advantages
 - can *handle non-globular shapes* well
 - *quick* execution speed
 - is capable of *identifying noise and outliers*
 - those properties make it applicable to a wide variety of data sets
 
+*** Challenges
+- correct setup of parameters requires higher understanding of the data
+- *varying cluster densities* create a challenge
+- not often applied in time series due to this complexity
 ** Grid-based methods
 #+BEGIN_NOTES
 - quantizing the feature space into hyper-rectangles (cells)
 - for each range of those intervals the respective metrics are computed
 #+END_NOTES  
-*** Challenges
-- *NO* relationship between the grids
-- interval range is a manual parameter
-- *Research Question*: Can these ranges be inferred from the data?
 *** Advantages
 - single pass computation $$ \mathcal{O}(N) $$
 - very fast query impacted only by number of grids (k): $$ \mathcal{O}(k) $$
   
+*** Challenges
+- *NO* relationship between the grids
+- interval range is a manual parameter
+- *Research Question*: Can these ranges be inferred from the data?
 ** Assessment metrics
 *** General points
 - trickiest part of the process
