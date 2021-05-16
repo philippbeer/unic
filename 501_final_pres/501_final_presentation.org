@@ -186,8 +186,8 @@ Euclidean distance
 #+END_NOTES
 
 *** Current state of research
-- *missing framework* how to choose these metrics
 - aim: identify new metrics or improve upon existing
+- *missing framework* how to choose these metrics
 
 ** Clustering Algorithms I
 | Partional                                                       | Hierarchical                                                    |
@@ -232,10 +232,10 @@ Euclidean distance
 - DBSCAN - two parameters (neighbourhood and minimum for points)
 #+END_NOTES  
 *** Advantages
-- can *handle non-globular shapes* well
+- *handles non-globular shapes*
 - *quick* execution speed
 - is capable of *identifying noise and outliers*
-- those properties make it applicable to a wide variety of data sets
+- applicable to a wide variety of data sets
 
 *** Challenges
 - correct setup of parameters requires higher understanding of the data
@@ -281,8 +281,8 @@ Euclidean distance
 
 ** Limitations
 *** General
-- generally clustering algorithms do not perform well with time series
-- dimensionality, noise and the dynamic nature of time series are problematic
+- clustering algorithms do not perform well with time series
+- *dimensionality*, *noise* are problematic
 - dimensionality reduction inherently brings *information loss*
 #+BEGIN_NOTES
 - implementations usually contain experimental flaws (data and implementation bias)
@@ -296,21 +296,21 @@ Euclidean distance
 - non-data-adaptive methods struggle with variying length time series.
 *** Simlarity metrics
 - *missing framework* to choose appropriate distance metric
-- choice between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)
+- choice between generally sensitive or computationally expensive metrics
 
 *** Algorithms 
 - having to define parameters
-- other algorithm categories address these issues at the price of computational complexity and infeasibility for large data sets
+- at the price of *complexity* other algorithms address this topic
+ 
 ** Conclusions and things you should remember
 *** Missing framework for times series clustering :noexport:
 - no clear pattern emerged for methods or metrics are to be used in which circumstances
 - likely due to lack of generalizability of the found results
 *** Researching towards more complexity  
-- research is aiming to add more complexity
-- may not serve the goals of finding meaningful algorithms
+may not serve the goals of finding meaningful algorithms
 *** Our proposal  
 - focus research efforts more on finding fundamental truths about this process
 - when to use/avoid certain metrics or algorithms
-- clarity here: may improve general understanding
+- may improve general understanding
 ** Thank you. Which questions do you have?
 [[https://philippbeer.github.io/unic/501_final_pres/501_ts_c_rev.pdf][(Details and the analyzed papers can be found in the literature review)]]
