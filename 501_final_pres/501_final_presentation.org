@@ -67,9 +67,10 @@ If you want to *utilize time series* to create *forecasts*,\\
 *learn about their properties* or\\
 *want to learn what is missing the research of time series clustering*\\
 (IMHO) you should listen to this talk.
-** Introduction
-- no bothering with names or particular studies - read the review
-- time series analysis is pervasive to many areas
+** Note
+no bothering with names or particular studies - read the review
+** Introduction  
+time series analysis is pervasive to many areas
 
 *** Applications
 forecasting,\\
