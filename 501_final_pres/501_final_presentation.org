@@ -277,8 +277,10 @@ Euclidean distance
 - generally clustering algorithms do not perform well with time series
 - dimensionality, noise and the dynamic nature of time series are problematic
 - dimensionality reduction inherently brings *information loss*
+#+BEGIN_NOTES
 - implementations usually contain experimental flaws (data and implementation bias)
-- limits the generalizability of study results to real-world problems  
+- limits the generalizability of study results to real-world problems
+#+END_NOTES
 *** Research :noexport:
 - research in this field is primarily focused on univariate time series
 - limited scope of time series are used for time series clustering research
@@ -290,8 +292,7 @@ Euclidean distance
 - the user needs to choose between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)
 - additionally very few metrics exceed the ED performance
 *** Algorithms 
-- non-globular shapes
-- having to define parameters algorithms
+- having to define parameters
 - other algorithm categories address these issues at the price of computational complexity and infeasibility for large data sets
 ** Conclusions and things you should remember
 *** Missing framework for times series clustering :noexport:
@@ -299,7 +300,6 @@ Euclidean distance
 - likely due to lack of generalizability of the found results
 *** Researching towards more complexity  
 - research is aiming to add more complexity
-- e.g. hybrid methods
 - may not serve the goals of finding meaningful algorithms
 *** Our proposal  
 - focus research efforts more on finding fundamental truths about this process
