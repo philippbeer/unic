@@ -136,7 +136,7 @@ Understand the intrinsic properties of time series oftentimes in context of adja
 - measure of how similar series are
 - usually computed pair-wise
 
-*** Utility of Time series clustering
+*** Utility of Time series clustering :noexport:
 #+ATTR_REVEAL: :frag fade-in-then-semi-out
 anomalies, novelties, discord
 
@@ -269,7 +269,7 @@ Euclidean distance
 - F-measure, Jaccard, entropy, ...
 *** Internal indexes
 - measure of goodness of cluster structure
-- Sum of Squared Errorrs, Silhouette Score, ...
+- Sum of Squared Erros, Silhouette Score, ...
 *** External indexes :noexport:
 - validation of clusters that exist outside of algorithm (often ground truth)
 - degree of matching between two partitions
@@ -295,9 +295,9 @@ Euclidean distance
 - data-adaptive and model-based representation reduces dimensionality but struggles with the analysis of multiple series
 - non-data-adaptive methods struggle with variying length time series.
 *** Simlarity metrics
-- no framework for choosing appropriate distance metric exists
-- the user needs to choose between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)
-- additionally very few metrics exceed the ED performance
+- *missing framework* to choose appropriate distance metric
+- choice between generally sensitive metrics (e.g. ED) and computationally expensive metrics (e.g. DTW)
+
 *** Algorithms 
 - having to define parameters
 - other algorithm categories address these issues at the price of computational complexity and infeasibility for large data sets
