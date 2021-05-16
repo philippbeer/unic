@@ -264,10 +264,16 @@ Euclidean distance
 - usually subsequent analytical step determines the value of the chosen clusters
 - pre-determined clusters are also only a specific usage of the underlying data
 *** External indexes
+- matches found clusters against an outside "truth"
+- F-measure, Jaccard, entropy, ...
+*** Internal indexes
+- measure of goodness of cluster structure
+- Sum of Squared Errorrs, Silhouette Score, ...
+*** External indexes :noexport:
 - validation of clusters that exist outside of algorithm (often ground truth)
 - degree of matching between two partitions
 - Cluster Purity, Rand Index, F-measure, Entropy, Jaccard index
-*** Internal indexes
+*** Internal indexes :noexport:
 - evaluation of a goodness of clustered structure
 - core idea: elements of same cluster close together / elements of other clusters well separated
 - Sum of Squared Errors, Silhouette score, R^2 index, ...
