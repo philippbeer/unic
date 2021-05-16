@@ -164,7 +164,7 @@ time series data representation is *transforming* the time series to another dim
 - categories: *stable* and *approximate*
 *** Stable distance metrics
 Euclidean distance
-  $$ d(p,q) = \sqrt{(p_1 - q_1)^2 + \cdots + (p_n - q_n)^2} $$
+  $$ d(p,q) = \sqrt{\sum_{k=1}^n (p_k - q_k)^2} $$
 - raw time series requires same length
 - no large outliers
 - limited noise
