@@ -66,7 +66,7 @@ Prof. Athena Stassopoulou
 If you want to *utilize time series* to create *forecasts*,\\
 *learn about their properties* or\\
 *want to learn what is missing the research of time series clustering*\\
-(IMHO) you should listen to this talk.
+you should listen to this talk.
 ** Note
 no bothering with names or particular studies - read the review
 ** Introduction  
@@ -173,11 +173,13 @@ Euclidean distance
 - ED requires same length time series
 #+END_NOTES
 *** approximate metrics
+#+CAPTION: Dynamic Time Warping
 #+ATTR_HTML: :width 500px
 #+ATTR_LATEX: :width 500px
 [[https://philippbeer.github.io/unic/501_final_pres/img/dtw_metric.png]]
 - can handle different length time series
-- Dynamic Time Warping (DTW)
+- computationally expensive
+  
 #+BEGIN_NOTES
 - other metrics address part of these issues (e.g. DTW)
 - other methods introduce other issues (DTW - warping around local extremes)
@@ -220,9 +222,9 @@ Euclidean distance
 - distance measure: single-, average-, complete-link
 #+END_NOTES  
 *** Advantages
+- no predetermination of *k* required
 - visual analysis
   # add image of dendogram
-- no predetermination of k required
 
 *** Challenges
 - no adjustments after decision about an element made
